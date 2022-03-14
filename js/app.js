@@ -1,6 +1,10 @@
+
 document.addEventListener('DOMContentLoaded',()=>{
     cargarProductos();
+    
 })
+
+
 botonHamburgesa();
 copyright();
 const btnComprar = document.querySelector('button.btn-comprar');
@@ -87,7 +91,7 @@ function mostrarProductos(productos){
         
 
         const divRopa = document.createElement('div');
-        divRopa.classList.add('ropa');
+        divRopa.classList.add('scroll','ropa');
         divRopa.dataset.id = id;
 
         const h2 = document.createElement('h2');
@@ -120,9 +124,11 @@ function mostrarProductos(productos){
         button.textContent = 'comprar';
         
         divRopa.appendChild(button);
-
-        divPrincipal.appendChild(divRopa);
         
+        divPrincipal.appendChild(divRopa);
+       
+        
+
         pasoUno(button,nombre,Precio,id,url);
     });
 
@@ -222,9 +228,9 @@ function pasoUno(button,nombre,precio,id,url){
         irBtn.textContent = 'Siguiente';
         form.appendChild(irBtn);
 
-        const divError = document.createElement('div');
-        divError.id = 'errorForm';
-        form.appendChild(divError);
+    const divError = document.createElement('div');
+    divError.id = 'errorForm';
+    form.appendChild(divError);
      
     const cerrarBtn = document.createElement('div');
     cerrarBtn.textContent = 'Cerrar';
@@ -307,4 +313,20 @@ function copyright(){
     copy.appendChild(pe);
     pe.appendChild(codinglabagency);
 }
-  
+
+
+
+
+function mostrarScroll() {
+    let animado = document.querySelectorAll('.scroll');
+ let scrollTop = document.documentElement.scrollTop;
+  for (var i = 0; i < animado.length; i++ ){
+   let alturaAnimado = animado[i].offsetTop;
+    if(alturaAnimado - 620 < scrollTop){
+        animado[i].style.opacity = 1;
+        animado[i].classList.add("mostrarArriba");
+    }
+}
+}
+window.addEventListener('scroll', mostrarScroll);
+
