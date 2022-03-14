@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+:root{
+    --primario: #FFD1DC;
+    --secundario: #eb636b;
+}
+
+
+/**globales**/
+.contenedor{
+    width: 100%;  
+    margin-right: auto;
+    margin-left: auto;
+}
+body{
+    background-color: var(--primario);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    display: block;
+    background-color: var(--secundario);
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 8rem 0 ;
+}
+
+/**btn whatsapp **/
+
+.btn-wp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #4dc247;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+    z-index: 2;
+}
+.btn-wp img{
+    width: 45px;
+    position: relative;
+    bottom: 2px;
+}
+
+/**header**/
+
+header{       
+    background-color: var(--primario);
+}
+.redes{
+    height: 40px;   
+    background-color: var(--secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes img:first-child{
+    margin-right: 10px ;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 3px solid #3333331a;
+    padding-top: 1rem;
+}
+
+.menu a{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    font-size: 18.5px;
+    color: #33333398;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    font-weight: bold;
+}
+.menu a:hover{
+    transition:all .5s ease-in-out;
+    color: var(--secundario)
+}
+.hero{
+    background-image: url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+    background-position: center center;
+    height: 50vh;
+}
+
+/**Productos**/
+
+.ropa-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    padding: 3rem 0;
+    gap: 1rem;
+    background-color: var(--primario);
+}
+.ropa{   
+    text-align: center;    
+    background-color: var(--secundario);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.ropa h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: lighter;
+    color: #5c2d38;
+    width: 200px;
+}
+.ropa img{
+    margin-bottom: 1rem;
+    width: 240px;
+}
+.ropa select,
+.ropa button{
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 3rem;
+    text-align: center;
+}
+.ropa select option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ropa button{
+    border: 1px solid #333333ad ;
+    background: transparent;
+    color: #1a1919e5;
+    box-shadow: 0px 0px 5px 1px #333333ad;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+button.btn-comprar:hover {
+    box-shadow: 0px 0px 5px 1px #ffffffad;
+    border: 1px solid #ffffffad;
+}
+.ropa p{
+    font-family: 'Hubballi', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px auto;
+}
+p span{
+    font-weight: bold;
+}
+
+/**Comprar producto**/
+
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: #000000c2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: column;
+} 
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+    border-radius: 5px;
+}
+.mensaje_modal h2{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}      
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+}      
+.mensaje_modal h3:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C5C5C5;
+    margin: 10px 0px 15px;
+}      
+#btnClose{
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+    background: #E25151;
+    color: #fff;
+    border: 2px solid #B14141;
+    cursor: pointer;
+    border-radius: 5px;  
+}
+.modal_wrap div#irBtn{
+    z-index: 200;
+}
+.btnMP{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 20px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: aqua;
+}
+form#form {
+    width: 250px;
+    background: #000000c2;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 1rem;
+    color: white;
+}
+form#form label{
+    width: 40%;
+    text-align: end;
+}
+form#form input{
+    border: none;
+    border-radius: 6px;
+}
+form#form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+button#irBtn{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    position:relative;
+    left: 150px;
+    border: none;
+    border-radius: 5px;
+}
+.modal_wrap h2 {
+    background: #E25151c2;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+.modal_wrap .descripcion {
+    background-color: #000000c2;
+    padding: 1rem;
+    color: white;
+    width: 250px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.cerrar {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: #e03232;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+    align-items: center;
+}
+.errorForm{
+    display: none;
+    background: #ffffff;
+    padding: 1rem;
+    margin: 1rem auto;
+    color: #e03232;
+    border-radius: 5px;
+}
+
+/**Acerca de nosotras**/
+.sobre-nosotras {
+    margin: 10rem 1rem;
+    padding: 2rem;
+    border: 3px solid var(--secundario);
+    font-family: 'Hubballi', cursive;
+    box-shadow: 0px 0px 5px 1px #333333ad;
+}
+
+/**contacto**/
+.contacto{      
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.contacto div{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.contenedor{
+    background-color: #fff;
+}
+.ubicacion{
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    padding: 3rem 0 ;
+}
+
+
+/**footer**/
+footer .menu{
+    display: flex;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: var(--primario);
+    border-top: none;
+}
+.copyright a {
+    color: #000000;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: lighter;
+    font-size: .7rem;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 4px;
+}
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: var(--secundario);
+    color: #fff;
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter;
+    text-align: center;
+}

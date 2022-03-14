@@ -1,0 +1,34 @@
+[
+   {
+        "nombre": "Jean claro",
+        "Precio": 2000,
+        "Talles": ["L","s"],
+        "imagen": "img/item-01.jpg",
+        "url":"https://mpago.la/2UrE49K",
+        "id":"1"
+    },
+    {
+        "nombre": "Jean oscuro",
+        "Precio": 3000,
+        "Talles": ["xl"],
+        "imagen": "img/item-02.jpg",
+        "url":"https://mpago.la/2UrE49K",
+        "id":"2"
+    },
+    {
+        "nombre": "Chaleco antibalas",
+        "Precio": 6262,
+        "Talles": ["xl","s","xxl"],
+        "imagen": "img/item-03.jpg",
+        "url":"https://mpago.la/2UrE49K",
+        "id":"3"
+    },
+    {
+        "nombre": "Cartera de cuero humano",
+        "Precio": 1111,
+        "Talles": ["M","XS"],
+        "imagen": "img/item-04.jpg",
+        "url":"https://mpago.la/2UrE49K",
+        "id":"4"
+    }
+]
