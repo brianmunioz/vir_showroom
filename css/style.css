@@ -57,6 +57,7 @@ h1{
     color: var(--secundario);
     background: transparent;
     padding: 0;
+    margin: 0;
 }
 
 header{       
