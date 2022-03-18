@@ -66,6 +66,7 @@ function btnMercadoPago(url){
        const btn = document.createElement('a');
        btn.href = url;
        btn.target = '__blank';
+       btn.rel = 'noopener';
        btn.classList.add('btnMP');
        btn.textContent = 'Pagar';
         modal.appendChild(btn)
