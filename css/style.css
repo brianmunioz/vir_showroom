@@ -53,6 +53,11 @@ h1{
 }
 
 /**header**/
+.menuresponsive h1{
+    color: var(--secundario);
+    background: transparent;
+    padding: 0;
+}
 
 header{       
     background-color: var(--primario);
