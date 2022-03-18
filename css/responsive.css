@@ -5,6 +5,7 @@
         flex-direction: column;
         
     }
+   
     .menu a{
         margin-bottom: 1rem;
     }
@@ -16,6 +17,9 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
+    }
+    .menuresponsive h1{
+        font-size: 1.3rem;
     }
 .hamburgesa{
     width: 35px;
@@ -70,9 +74,7 @@
         width: 25px;
         height: 25px; 
     }
-    .menuresponsive img{
-        width: 200px;
-    }
+    
     
 }
 @media screen and (min-width: 600px) {
