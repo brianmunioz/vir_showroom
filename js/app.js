@@ -101,6 +101,7 @@ function mostrarProductos(productos){
 
         const img = document.createElement('img');
         img.src = imagen;
+        img.alt = nombre;
         divRopa.appendChild(img);
 
         const select = document.createElement('select');
