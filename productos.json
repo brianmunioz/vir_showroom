@@ -16,7 +16,7 @@
         "id":"2"
     },
     {
-        "nombre": "Chaleco antibalas",
+        "nombre": "Chaleco",
         "Precio": 6262,
         "Talles": ["xl","s","xxl"],
         "imagen": "img/item-03.jpg",
@@ -24,7 +24,7 @@
         "id":"3"
     },
     {
-        "nombre": "Cartera de cuero humano",
+        "nombre": "Cartera",
         "Precio": 2650,
         "Talles": ["M","XS"],
         "imagen": "img/item-04.jpg",
